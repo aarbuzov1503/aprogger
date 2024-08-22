@@ -1,0 +1,23 @@
+<?
+
+    ini_set('display_errors', 1);
+    error_reporting(E_ALL);
+
+    $dbname = 'cl92747_aprogger';
+    $dbuser = 'cl92747_aprogger';
+    $dbpass = 'Aprogger@cl92747';
+
+   $pdo = new PDO("mysql:host=localhost;dbname=$dbname", $dbuser, $dbpass);
+    $stmt = $pdo->prepare('INSERT INTO aprogger_task (name, phone, email, text) VALUES(:name, :phone, :email, :text)');
+
+    
+    $stmt->bindValue(':name', $_POST['name']);
+    $stmt->bindValue(':phone', $_POST['phone']);
+    $stmt->bindValue(':email', $_POST['email']);
+    $stmt->bindValue(':text', $_POST['text']);
+    
+
+    if ($stmt->execute()) {
+        echo '1';
+    }
+    ?>
