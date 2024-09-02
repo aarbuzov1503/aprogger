@@ -3,9 +3,9 @@
     ini_set('display_errors', 1);
     error_reporting(E_ALL);
 
-    $dbname = 'cl92747_aprogger';
-    $dbuser = 'cl92747_aprogger';
-    $dbpass = 'Aprogger@cl92747';
+    $dbname = '';
+    $dbuser = '';
+    $dbpass = '';
 
    $pdo = new PDO("mysql:host=localhost;dbname=$dbname", $dbuser, $dbpass);
     $stmt = $pdo->prepare('INSERT INTO header_api (name, phone, email) VALUES(:name, :phone, :email)');
