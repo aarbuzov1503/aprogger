@@ -1,9 +1,9 @@
 <?
 // Подключение к базе данных MySQL
 $servername = "localhost";
-$dbuser = "cl92747_aprogger";
-$dbpass = "Aprogger@cl92747";
-$dbname = "cl92747_aprogger";
+$dbuser = "";
+$dbpass = "";
+$dbname = "";
 
     $pdo = new PDO("mysql:host=localhost;dbname=$dbname", $dbuser, $dbpass);
     $stmt = $pdo->query('SELECT * FROM moderate ORDER BY id DESC');
@@ -93,9 +93,9 @@ window.yaContextCb.push(()=>{
         </section>
         <?
 
-    $dbname = 'cl92747_aprogger';
-    $dbuser = 'cl92747_aprogger';
-    $dbpass = 'Aprogger@cl92747';
+    $dbname = '';
+    $dbuser = '';
+    $dbpass = '';
 
     $pdo = new PDO("mysql:host=localhost;dbname=$dbname", $dbuser, $dbpass);
     $stmt = $pdo->query('SELECT * FROM aprogger_task ORDER BY id DESC');
@@ -129,9 +129,9 @@ window.yaContextCb.push(()=>{
 
   <?
 
-    $dbname = 'cl92747_aprogger';
-    $dbuser = 'cl92747_aprogger';
-    $dbpass = 'Aprogger@cl92747';
+    $dbname = '';
+    $dbuser = '';
+    $dbpass = ';
 
     $pdo = new PDO("mysql:host=localhost;dbname=$dbname", $dbuser, $dbpass);
     $stmt = $pdo->query('SELECT * FROM header_api ORDER BY id DESC');
