@@ -1,9 +1,9 @@
 <?php
 // Подключение к базе данных MySQL
 $servername = "localhost";
-$username = "cl92747_verstak";
-$password = "cl92747_verstakPass";
-$dbname = "cl92747_verstak";
+$username = "";
+$password = "";
+$dbname = "";
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
